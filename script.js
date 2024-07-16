@@ -1,3 +1,5 @@
+// El javascript se uso solo para traducir los lenguajes.
+
 const translations = {
     en: {
         "nav-about": "About Me",
