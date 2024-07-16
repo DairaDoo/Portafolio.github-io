@@ -23,6 +23,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dairan S. De Jesús Mora | Programmer">
+  <meta property="og:description" content="Web development portfolio of Dairan S.">
+  <meta property="og:image" content="imgs/icono_p.png">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dairan S. De Jesús Mora | Programmer">
+  <meta name="twitter:description" content="Web development portfolio of Dairan S.">
+  <meta name="twitter:image" content="imgs/icono_p.png">
+
 </head>
 
 <body>
@@ -38,40 +52,40 @@
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+            <a class="nav-link active" aria-current="page" href="#about-me" data-translate="nav-about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects" data-translate="nav-projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#testimonials" data-translate="nav-testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" data-translate="nav-contact">Contact</a>
           </li>
         </ul>
+        <button id="language-toggle" class="btn btn-secondary ms-auto">ES</button>
       </div>
     </div>
   </nav>
 
-    <!-- Hero Section -->
+  <!-- Hero Section -->
   <section class="hero align-items-stretch">
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
       <img class="hero-imagen-perfil rounded-circle imagen-perfil" src="imgs/imagen_perfil_3.jpg" alt="Photo of Dairan S. De Jesús">
-      <h1>Hello, my name is Dairan S. De Jesús Mora</h1>
-      <h2>Third-year Computer Science student and computer tutor at Interamericana of Arecibo. Experienced in student support, web development, and full stack programming.</h2>
+      <h1 id="hero-intro" data-translate="hero-intro">Hello, my name is Dairan S. De Jesús Mora</h1>
+      <h2 id="hero-description" data-translate="hero-description">Fourth-year Computer Science student and computer tutor at Interamerican University of Puerto Rico, Arecibo Campus. Experienced in student support, web development, and full stack programming.</h2>
     </div>
     <div class="hero-inferior">
       <img class="hero-inferior-imagen img-fluid" src="imgs/html,js,bs,css.webp" alt="Image about HTML, CSS, JavaScript, and Bootstrap.">
     </div>
   </section>
 
-
   <!-- About Me -->
   <section id="about-me" class="about-me seccion-oscura">
     <div class="container">
-      <h2 class="seccion-titulo">Meet Dairan S. De Jesús Mora</h2>
-      <p class="seccion-texto">Computer Science student at the Interamerican University of Puerto Rico, Arecibo, with experience as a Student Support Technician and Computer Tutor. I hold certifications in Scrum Foundation and Software Engineering Fundamentals and completed a Full Stack Development bootcamp. Passionate about teaching and continuous learning, I am committed to growing in my field and contributing to technology and education.</p>
+      <h2 class="seccion-titulo" data-translate="about-title">Meet Dairan S. De Jesús Mora</h2>
+      <p class="seccion-texto" data-translate="about-text">Computer Science student at the Interamerican University of Puerto Rico, Arecibo, with experience as a Student Support Technician and Computer Tutor. I hold certifications in Scrum Foundation and Software Engineering Fundamentals and completed a Full Stack Development bootcamp. Passionate about teaching and continuous learning, I am committed to growing in my field and contributing to technology and education.</p>
     </div>
   </section>
 
@@ -83,8 +97,8 @@
         <div class="columna col-12 col-md-4 d-flex">
           <div class="content d-flex flex-column align-items-center">
             <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Web Development</p>
-            <p class="experiencia-texto">Experienced in web development, utilizing a wide range of technologies and frameworks. Proficient in creating responsive and dynamic websites using modern web standards and best practices.</p>
+            <p class="experiencia-titulo" data-translate="experience-webdev-title">Web Development</p>
+            <p class="experiencia-texto" data-translate="experience-webdev-text">Experienced in web development, utilizing a wide range of technologies and frameworks. Proficient in creating responsive and dynamic websites using modern web standards and best practices.</p>
             <div class="badges-contenedor mt-auto">
               <span class="badge text-bg-primary">HTML</span>
               <span class="badge text-bg-primary">CSS</span>
@@ -104,8 +118,8 @@
         <div class="columna col-12 col-md-4 d-flex">
           <div class="content d-flex flex-column align-items-center">
             <i class="bi bi-server"></i>
-            <p class="experiencia-titulo">Backend Development</p>
-            <p class="experiencia-texto">Skilled in backend development, creating robust and efficient server-side applications. Proficient in using various technologies to build secure, scalable, and maintainable systems.</p>
+            <p class="experiencia-titulo" data-translate="experience-backend-title">Backend Development</p>
+            <p class="experiencia-texto" data-translate="experience-backend-text">Skilled in backend development, creating robust and efficient server-side applications. Proficient in using various technologies to build secure, scalable, and maintainable systems.</p>
             <div class="badges-contenedor mt-auto">
               <span class="badge text-bg-primary">Python</span>
               <span class="badge text-bg-primary">Node.js</span>
@@ -126,8 +140,8 @@
         <div class="columna col-12 col-md-4 d-flex">
           <div class="content d-flex flex-column align-items-center">
             <i class="bi bi-book"></i>
-            <p class="experiencia-titulo">Student</p>
-            <p class="experiencia-texto">Computer Science student at Interamerican University of Puerto Rico, actively expanding my skills through courses and bootcamps. My education provides a solid foundation in both theoretical and practical aspects of computer science.</p>
+            <p class="experiencia-titulo" data-translate="experience-student-title">Student</p>
+            <p class="experiencia-texto" data-translate="experience-student-text">Computer Science student at Interamerican University of Puerto Rico, actively expanding my skills through courses and bootcamps. My education provides a solid foundation in both theoretical and practical aspects of computer science.</p>
             <div class="badges-contenedor mt-auto">
               <span class="badge text-bg-primary">Interamerican University</span>
               <span class="badge text-bg-primary">UX/UI</span>
@@ -145,212 +159,178 @@
     </div>
   </section>
 
-
-
-
   <!-- Projects -->
-  <section id="projects" class="projects seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro">My Recent Projects</h2>
-    <h3 class="seccion-descripcion">Here are some of the projects I've created recently...</h3>
-
-    <!-- Project Gallery -->
-    <div class="container text-center projects-container">
+  <section id="projects" class="projects py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="seccion-titulo mb-4 texto-negro" data-translate="projects-title">My Recent Projects</h2>
+      <h3 class="seccion-descripcion mb-5" data-translate="projects-description">Here are some of the projects I've created recently...</h3>
       <div class="row">
         <!-- Project 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/proyecto1.png" alt="Project 1">
-            <div class="overlay">
-              <p>Project 1</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_1" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="proyecto_1/proyecto1.html" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/proyecto1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project1-title">Project 1</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="proyecto_1/proyecto1.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/lego_serious_play_image.png" alt="Project 2">
-            <div class="overlay">
-              <p>Project 2</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/proyecto_pato.github.io" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://dairadoo.github.io/proyecto_pato.github.io/duckHomePage.html" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/lego_serious_play_image.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project2-title">Project 2</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/proyecto_pato.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="https://dairadoo.github.io/proyecto_pato.github.io/duckHomePage.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/manta_roja_image.png" alt="Project 3">
-            <div class="overlay">
-              <p>Project 3</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/restaurant-reservation-front.github.io" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://dairadoo.github.io/restaurant-reservation-front.github.io/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/manta_roja_image.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project3-title">Project 3</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/restaurant-reservation-front.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="https://dairadoo.github.io/restaurant-reservation-front.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/crud_simple_imagen.png" alt="Project 4">
-            <div class="overlay">
-              <p>Project 4</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_4/Crud_Simple" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="proyecto_4/Crud_Simple/index.html" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/crud_simple_imagen.png" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project4-title">Project 4</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_4/Crud_Simple" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="proyecto_4/Crud_Simple/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/tic_tac_toe_imagen.png" alt="Project 5">
-            <div class="overlay">
-              <p>Project 5</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_5/tic_tac_toe" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="proyecto_5/tic_tac_toe/index.html" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/tic_tac_toe_imagen.png" class="card-img-top" alt="Project 5">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project5-title">Project 5</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_5/tic_tac_toe" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="proyecto_5/tic_tac_toe/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
         <!-- Project 6 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <img src="imgs/proyecto_7_img.png" alt="Project 6">
-            <div class="overlay">
-              <p>Project 6</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/DairaDoo/Portafolio.github-io/tree/main/proyecto_7/Reloj_analitico_2" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="proyecto_7/Reloj_analitico_2/index.html" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="imgs/proyecto_7_img.png" class="card-img-top" alt="Project 6">
+            <div class="card-body">
+              <h5 class="card-title" data-translate="project6-title">Project 6</h5>
+              <div class="d-flex justify-content-between">
+                <a href="https://github.com/DairaDoo/Portafolio.github-io/tree/main/proyecto_7/Reloj_analitico_2" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                <a href="proyecto_7/Reloj_analitico_2/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info" data-translate="view-more-projects">View more projects
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
     </div>
-    <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn btn-info">View more projects
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button>
-    </a>
   </section>
 
-  <!-- Articles -->
-  <section class="articles justify-content-start">
-    <h2 class="seccion-titulo texto-negro">Articles</h2>
-    <div class="card">
-      <div class="card-header">
-        Most recent
+  <!-- Certificate Carousel -->
+  <section id="certificates" class="certificates py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="seccion-titulo texto-negro mb-4" data-translate="certificates-title">Certificates and Achievements</h2>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imgs/certificados/forte_certificado.jpg" class="d-block w-100 img-fluid certificado-img" alt="Full Stack Developer Junior">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imgs/certificados/fundamentos_software_cert.jpg" class="d-block w-100 img-fluid certificado-img" alt="Fundamentos Profesionales del Software">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/certificados/JavaCurso_Certificado.jpg" class="d-block w-100 img-fluid certificado-img" alt="The Complete Java CertificationCourse">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/certificados/python_flask_cert.jpg" class="d-block w-100 img-fluid certificado-img" alt="REST APIs with Flask and Python in 2024">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/certificados/Scrum_Certificado.png" class="d-block w-100 img-fluid certificado-img" alt="SCRUM Foundation">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <ul class="list-group list-group-flush">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <li class="list-group-item">
-            An item
-          </li>
-        </a>
-      </ul>
     </div>
-
-    <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn btn-info">
-        View more articles
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button>
-    </a>
   </section>
 
   <!-- Testimonials -->
   <section id="testimonials" class="testimonials seccion-clara">
-    <h2 class="seccion-titulo">Testimonials</h2>
-    <h3 class="seccion-descripcion">Here are some testimonials from my colleagues....</h3>
+    <h2 class="seccion-titulo" data-translate="testimonials-title">Testimonials</h2>
+    <h3 class="seccion-descripcion" data-translate="testimonials-description">Here are some testimonials from my colleagues....</h3>
 
     <!-- Carousel -->
     <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imgs/imagen_usuario.jpg" alt="Client 1">
-            <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisl lacus. Cras viverra ut turpis vitae lobortis. Cras hendrerit.</p>
+            <img class="testimonio-imagen rounded-circle" src="imgs/testimonials/ian_profile.jpg" alt="Client 1">
+            <p class="testimonio-texto" data-translate="testimonial1-text">I have collaborated repeatedly with Dairan de Jesús Mora on different projects, and he always shows interest and great effort. He consistently gives his best and strives to meet all the requirements assigned to him when working on a project.</p>
             <div class="testimonio-info">
-              <p class="cliente">Client's Name</p>
-              <p class="cargo">Position Information</p>
+              <p class="cliente">Ian P. Padua</p>
+              <p class="cargo">Programmer</p>
+              <p class="cargo">Linkedln Profile: <a href="https://www.linkedin.com/in/ian-padua-cuevas-1946b3319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">ian_padua</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imgs/imagen_usuario.jpg" alt="Client 2">
-            <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisl lacus. Cras viverra ut turpis vitae lobortis. Cras hendrerit.</p>
+            <img class="testimonio-imagen rounded-circle" src="imgs/testimonials/ramon_profile.jpeg" alt="Client 2">
+            <p class="testimonio-texto" data-translate="testimonial2-text">Dairan is an exceptional Java and full stack developer, and a great tutor. I’ve witnessed their journey from mastering the basics of coding to successfully completing full projects. Their dedication and skill growth are truly impressive.</p>
             <div class="testimonio-info">
-              <p class="cliente">Client's Name</p>
-              <p class="cargo">Position Information</p>
+              <p class="cliente">Ramon Valentin</p>
+              <p class="cargo">Programmer Specialized in Cybersecurity</p>
+              <p class="cargo">Linkedln Profile: <a href="https://www.linkedin.com/in/ramonvalentinrivera/" target="_blank" rel="noopener noreferrer">ramon_valentin</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="container">
             <img class="testimonio-imagen rounded-circle" src="imgs/imagen_usuario.jpg" alt="Client 3">
-            <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisl lacus. Cras viverra ut turpis vitae lobortis. Cras hendrerit.</p>
+            <p class="testimonio-texto" data-translate="testimonial3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisl lacus. Cras viverra ut turpis vitae lobortis. Cras hendrerit.</p>
             <div class="testimonio-info">
-              <p class="cliente">Client's Name</p>
-              <p class="cargo">Position Information</p>
+              <p class="cliente">Lara V. Cordero</p>
+              <p class="cargo">Programmer</p>
+              <p class="cargo">Linkedln Profile: <a href="" target="_blank" rel="noopener noreferrer">lara_cordero</a></p>
             </div>
           </div>
         </div>
@@ -371,15 +351,15 @@
     <div class="container">
       <div class="container text-center rectangulo d-flex justify-content-evenly">
         <div class="row">
-          <div class="col-12 col-md-4 seccion-titulo">
+          <div class="col-12 col-md-4 seccion-titulo" data-translate="contact-title">
             Let's Talk!
           </div>
-          <div class="col-12 col-md-4 descripcion">
+          <div class="col-12 col-md-4 descripcion" data-translate="contact-description">
             Contact me to start your web development project and I will bring your vision to life.
           </div>
           <div class="col-12 col-md-4">
-            <a href="mailto:dairandejesus@gmail.com">
-              <button type="button">
+            <a href="mailto:dairandemora.work@gmail.com">
+              <button type="button" data-translate="contact-button">
                 Contact
                 <i class="bi bi-envelope-check"></i>
               </button>
@@ -393,9 +373,9 @@
   <!-- Footer -->
   <footer class="footer seccion-oscura d-flex flex-column align-items-center justify-content-center">
     <img class="footer-icono" src="imgs/portfolio_78401.svg" alt="Portfolio logo">
-    <p class="footer-texto text-center">I learn and create every day <br> Let's create a project together.</p>
+    <p class="footer-texto text-center" data-translate="footer-text">I learn and create every day. Let's join forces and bring your project to life!</p>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="https://x.com/DairanDoo33?t=unDgVJJUpnRhCyeAlAodJw&s=08" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-twitter"></i>
       </a>
       <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
@@ -407,15 +387,18 @@
       <a href="https://www.instagram.com/dairandoo/" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-instagram"></i>
       </a>
-      <a href="mailto:dairandejesus344@gmail.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:dairandemora.work@gmail.com" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-envelope"></i>
       </a>
     </div>
-    <div class="derechos-de-autor">Created by Dairan De Jesús (2024) &#169;</div>
+    <div class="derechos-de-autor" data-translate="footer-copyright">Created by Dairan De Jesús (2024) &#169;</div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
+
+

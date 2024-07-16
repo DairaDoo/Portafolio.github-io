@@ -216,33 +216,36 @@ h1 {
   }
 }
 
-/* Articles */
-.articles {
-  min-height: 500px;
-  padding: 30px;
+/* Certificados */
+.certificates img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+  margin: auto;
+  display: block;
 }
 
-.articles .card {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px;
+.certificado-img {
+  max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+  object-fit: contain; /* Para mantener la relación de aspecto */
 }
 
-.articles .card-header {
-  font-weight: bold;
-}
+
 
 /* Testimonials */
 .testimonials {
   padding: 40px;
+  margin-bottom: 60px;
 }
 
 .testimonials .carousel {
   max-width: 800px;
+  margin: auto;
 }
 
-.carousel-item {
-  height: 500px;
+.carousel-item img {
+  border-radius: 10px;
+  border: 2px solid #ddd;
 }
 
 .carousel-item .container {
