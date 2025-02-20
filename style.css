@@ -419,3 +419,65 @@ h1 {
     max-width: 600px;
   }
 }
+
+/* estilos boton de whattsapp */
+/* WhatsApp Button Styling */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;  /* Position from the bottom */
+  right: 20px;   /* Position from the right */
+  background-color: #25d366;  /* WhatsApp green */
+  color: white;
+  border-radius: 50%;  /* Circular shape */
+  padding: 12px;  /* Padding around the icon */
+  width: 60px;    /* Fixed width for the circular button */
+  height: 60px;   /* Fixed height for the circular button */
+  font-size: 24px;  /* Icon size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+  z-index: 1000;  /* Ensure it stays on top */
+  transition: background-color 0.3s, transform 0.3s;  /* Smooth transitions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;  /* Make it look clickable */
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;  /* Darker green on hover */
+  transform: scale(1.1);  /* Slightly enlarge the button on hover */
+}
+
+.whatsapp-btn i {
+  font-size: 1.5rem;  /* Icon size */
+}
+
+.whatsapp-content {
+  position: absolute;
+  bottom: 80px;  /* Position the text above the button */
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);  /* Slightly transparent background */
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0;  /* Hide text initially */
+  pointer-events: none;  /* Prevent interaction with the text */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.whatsapp-btn:hover .whatsapp-content {
+  opacity: 1;  /* Show the text on hover */
+  transform: translateY(-5px);  /* Slight upward movement */
+}
+
+.whatsapp-btn:hover .whatsapp-content {
+  display: inline-block;  /* Make sure the text appears on hover */
+}
+
+
+
+
+
+
