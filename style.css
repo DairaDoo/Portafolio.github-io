@@ -200,8 +200,8 @@ h1 {
 
 .hero-principal h1 {
   font-size: 3.2rem;
-  font-family: 'Rubik Dirt', cursive;
-  background: linear-gradient(135deg, #000000 0%, #34003b 50%, #030303 100%);
+  font-family: 'DM Serif Display', serif;
+  background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
