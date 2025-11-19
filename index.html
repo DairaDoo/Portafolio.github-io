@@ -1,465 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dairan S." />
+    <meta name="description" content="Web development portfolio of Dairan S." />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
+    <title>Dairan S. De Jesús Mora | software engineer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imgs/icono_p.png" />
 
-<head>
-  <!-- Metadata -->
-  <meta charset="UTF-8">
-  <meta name="author" content="Dairan S.">
-  <meta name="description" content="Web development portfolio of Dairan S.">
-  <meta name="keywords" content="HTML, CSS, JavaScript, React">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Title -->
-  <title>Dairan S. De Jesús Mora | software engineer</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="imgs/icono_p.png">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dairan S. De Jesús Mora | Programmer" />
+    <meta
+      property="og:description"
+      content="Web development portfolio of Dairan S."
+    />
+    <meta property="og:image" content="imgs/icono_p.png" />
+    <meta
+      property="og:url"
+      content="https://dairadoo.github.io/Portafolio.github-io/"
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Dairan S. De Jesús Mora | Programmer">
-  <meta property="og:description" content="Web development portfolio of Dairan S.">
-  <meta property="og:image" content="imgs/icono_p.png">
-  <meta property="og:url" content="https://dairadoo.github.io/Portafolio.github-io/">
-  <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dairan S. De Jesús Mora | Programmer" />
+    <meta
+      name="twitter:description"
+      content="Web development portfolio of Dairan S."
+    />
+    <meta name="twitter:image" content="imgs/icono_p.png" />
+  </head>
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dairan S. De Jesús Mora | Programmer">
-  <meta name="twitter:description" content="Web development portfolio of Dairan S.">
-  <meta name="twitter:image" content="imgs/icono_p.png">
-
-</head>
-
-<body>
-
-
-
-
-
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand" href="#">
-          <img src="imgs/icono_p.png" width="50" alt="Website logo">
-        </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about-me" data-translate="nav-about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects" data-translate="nav-projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials" data-translate="nav-testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" data-translate="nav-contact">Contact</a>
-          </li>
-        </ul>
-        <button id="language-toggle" class="btn btn-secondary ms-auto">ES</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-      <img class="hero-imagen-perfil rounded-circle imagen-perfil" src="imgs/imagen_perfil_2_resize.jpg" alt="Photo of Dairan S. De Jesús">
-      <h1 id="hero-intro" data-translate="hero-intro">Hello, my name is Dairan S. De Jesús Mora</h1>
-      <h2 id="hero-description" data-translate="hero-description">Full Stack Developer and Computer Science student at the Interamerican University of Puerto Rico, passionate about technology, innovation, and continuous learning. Experienced in full stack development, cloud computing, and recognized for my dedication as a Programming Tutor. Skilled in modern frameworks, cloud infrastructure, and agile methodologies. Eager to contribute and grow in dynamic environments.</h2>
-    </div>
-    <div class="hero-inferior">
-      <img class="hero-inferior-imagen img-fluid" src="imgs/html,js,bs,css.webp" alt="Image about HTML, CSS, JavaScript, and Bootstrap.">
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="about-me" class="about-me seccion-oscura">
-    <div class="container">
-      <h2 class="seccion-titulo" data-translate="about-title">Meet Dairan S. De Jesús Mora</h2>
-      <p class="seccion-texto" data-translate="about-text">Full Stack Developer and Computer Science student with strong experience in backend development, cloud integration, and frontend development. Skilled in designing scalable APIs and software architectures using ASP.NET Core, NestJS, and Flask, while building modern, responsive interfaces with Angular and React. Certified AWS Cloud Practitioner, with practical knowledge of SaaS, PaaS, and IaaS models, and hands-on experience deploying applications to the cloud. Passionate about delivering end-to-end solutions that connect databases, backend services, cloud infrastructure, and user interfaces—making systems not only functional and reliable, but also user-centered and impactful.</p>
-    </div>
-  </section>
-
-  <!-- Experience -->
-<section class="experience seccion-clara">
-  <div class="container text-center">
-    <div class="row">
-      <!-- Web Development -->
-      <div class="columna col-12 col-md-4 d-flex">
-        <div class="content d-flex flex-column align-items-center">
-          <i class="bi bi-laptop"></i>
-          <p class="experiencia-titulo" data-translate="experience-webdev-title">Web Development</p>
-          <p class="experiencia-texto" data-translate="experience-webdev-text">Experienced in web development, utilizing a wide range of technologies and frameworks. Proficient in creating responsive and dynamic websites using modern web standards and best practices.</p>
-          <div class="badges-contenedor mt-auto">
-            <span class="badge text-bg-primary">HTML</span>
-            <span class="badge text-bg-primary">CSS</span>
-            <span class="badge text-bg-primary">JavaScript</span>
-            <span class="badge text-bg-primary">TypeScript</span>
-            <span class="badge text-bg-primary">Bootstrap</span>
-            <span class="badge text-bg-primary">Tailwind</span>
-            <span class="badge text-bg-primary">React</span>
-            <span class="badge text-bg-primary">NextJS</span>
-            <span class="badge text-bg-primary">Angular</span>
-            <span class="badge text-bg-primary">Angular Material</span>
-            <span class="badge text-bg-primary">VueJS</span>
-            <span class="badge text-bg-primary">Flutter</span>
-            <span class="badge text-bg-primary">Figma</span>
-          </div>
-        </div>
-      </div>
-      <!-- Backend & Cloud -->
-      <div class="columna col-12 col-md-4 d-flex">
-        <div class="content d-flex flex-column align-items-center">
-          <i class="bi bi-server"></i>
-          <p class="experiencia-titulo" data-translate="experience-backend-title">Cloud & Backend</p>
-          <p class="experiencia-texto" data-translate="experience-backend-text">Hands-on experience with cloud computing (AWS), SaaS, PaaS, and IaaS. Skilled in backend development, database management, and deploying secure, scalable solutions. Familiar with DevOps, Git, and cloud infrastructure configuration.</p>
-          <div class="badges-contenedor mt-auto">
-            <span class="badge text-bg-primary">Python</span>
-            <span class="badge text-bg-primary">Java</span>
-            <span class="badge text-bg-primary">C++</span>
-            <span class="badge text-bg-primary">C#</span>
-            <span class="badge text-bg-primary">Node.js</span>
-            <span class="badge text-bg-primary">NestJS</span>
-            <span class="badge text-bg-primary">Flask</span>
-            <span class="badge text-bg-primary">Prisma</span>
-            <span class="badge text-bg-primary">SQL</span>
-            <span class="badge text-bg-primary">PostgreSQL</span>
-            <span class="badge text-bg-primary">MySQL</span>
-            <span class="badge text-bg-primary">MariaDB</span>
-            <span class="badge text-bg-primary">SQL Server</span>
-            <span class="badge text-bg-primary">Dapper</span>
-            <span class="badge text-bg-primary">Entity Framework</span>
-            <span class="badge text-bg-primary">ASP.NET Core</span>
-            <span class="badge text-bg-primary">AWS</span>
-            <span class="badge text-bg-primary">Azure</span>
-            <span class="badge text-bg-primary">REST APIs</span>
-            <span class="badge text-bg-primary">JWT</span>
-            <span class="badge text-bg-primary">Docker</span>
-            <span class="badge text-bg-primary">DevOps</span>
-            <span class="badge text-bg-primary">Linux</span>
-            <span class="badge text-bg-primary">Git</span>
-            <span class="badge text-bg-primary">GitHub</span>
-            <span class="badge text-bg-primary">GitLab</span>
-            <span class="badge text-bg-primary">SqlAlchemy</span>
-          </div>
-        </div>
-      </div>
-      <!-- Student + Programming Tutor -->
-<div class="columna col-12 col-md-4 d-flex">
-  <div class="content d-flex flex-column align-items-center">
-    <i class="bi bi-book"></i>
-    <p class="experiencia-titulo" data-translate="experience-student-title">Student + Programming Tutor</p>
-    <p class="experiencia-texto" data-translate="experience-student-text">
-      Computer Science student at the Interamerican University of Puerto Rico and former Programming Tutor, recognized for three years of service. Actively expanding my skills through certifications, bootcamps, and hands-on projects in cloud, full stack development, and agile methodologies.
-    </p>
-    <div class="badges-contenedor mt-auto">
-      <span class="badge text-bg-primary">Interamerican University</span>
-      <span class="badge text-bg-primary">Programming Tutor</span>
-      <span class="badge text-bg-primary">Full Stack Development Bootcamp</span>
-      <span class="badge text-bg-primary">AWS Certified Cloud Practitioner</span>
-      <span class="badge text-bg-primary">Scrum</span>
-      <span class="badge text-bg-primary">Forte Global</span>
-      <span class="badge text-bg-primary">OOP</span>
-      <span class="badge text-bg-primary">SDLC</span>
-      <span class="badge text-bg-primary">UX/UI</span>
-      <span class="badge text-bg-primary">Databases</span>
-      <span class="badge text-bg-primary">CLI</span>
-      <span class="badge text-bg-primary">Linux</span>
-      <span class="badge text-bg-primary">Udemy</span>
-      <span class="badge text-bg-primary">Cloud</span>
-      <span class="badge text-bg-primary">Agile</span>
-      <span class="badge text-bg-primary">Problem Solving</span>
-      <span class="badge text-bg-primary">Mentoring</span>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects py-5 text-center bg-light">
-    <div class="container">
-      <h2 class="seccion-titulo mb-4 texto-negro" data-translate="projects-title">My Recent Projects</h2>
-      <h3 class="seccion-descripcion mb-5" data-translate="projects-description">Here are some of the projects I've created recently...</h3>
-      <div class="row">
-        <!-- Project 1 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/proyecto1.png" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Static Page</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_1" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="proyecto_1/proyecto1.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/lego_serious_play_image.png" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Lego Serious Play</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/proyecto_pato.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="https://dairadoo.github.io/proyecto_pato.github.io/duckHomePage.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/manta_roja_image.png" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Manta Roja Restaurant</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/restaurant-reservation-front.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="https://dairadoo.github.io/restaurant-reservation-front.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/crud_simple_imagen.png" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-              <h5 class="card-title">Local Crud</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_4/Crud_Simple" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="proyecto_4/Crud_Simple/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/foodies-app-image.png" class="card-img-top" alt="Project 5">
-            <div class="card-body">
-              <h5 class="card-title">Foodies App</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/Next-js-FoodieProject" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="https://proyecto-nextjs-foodies.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img src="imgs/inspireMe_image.png" class="card-img-top" alt="Project 6">
-            <div class="card-body">
-              <h5 class="card-title">InspireMe!</h5>
-              <div class="d-flex justify-content-between">
-                <a href="https://github.com/DairaDoo/react-refresh-code" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
-                <a href="https://main.d1nkag83kkxelb.amplifyapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><i class="bi bi-laptop"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-info" data-translate="view-more-projects">View more projects
-          <i class="bi bi-arrow-right-circle-fill"></i>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbar-toggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </a>
-    </div>
-  </section>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/icono_p.png" width="50" alt="Website logo" />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#about-me"
+                data-translate="nav-about"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-translate="nav-projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#testimonials"
+                data-translate="nav-testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-translate="nav-contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button id="language-toggle" class="btn btn-secondary ms-auto">
+            ES
+          </button>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Certificate Carousel -->
-  <section id="certificates" class="certificates py-5 text-center bg-light">
-    <div class="container">
-      <h2 class="seccion-titulo texto-negro mb-4" data-translate="certificates-title">Certificates and Achievements</h2>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
+    <!-- Hero Section -->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="hero-imagen-perfil rounded-circle imagen-perfil"
+          src="imgs/imagen_perfil_2_resize.jpg"
+          alt="Photo of Dairan S. De Jesús"
+        />
+        <h1 id="hero-intro" data-translate="hero-intro">
+          Hello, my name is Dairan S. De Jesús Mora
+        </h1>
+        <h2 id="hero-description" data-translate="hero-description">
+          Full Stack Developer and Computer Science student at the Interamerican
+          University of Puerto Rico, passionate about technology, innovation,
+          and continuous learning. Experienced in full stack development, cloud
+          computing, and recognized for my dedication as a Programming Tutor.
+          Skilled in modern frameworks, cloud infrastructure, and agile
+          methodologies. Eager to contribute and grow in dynamic environments.
+        </h2>
+      </div>
+      <div class="hero-inferior">
+        <img
+          class="hero-inferior-imagen img-fluid"
+          src="imgs/html,js,bs,css.webp"
+          alt="Image about HTML, CSS, JavaScript, and Bootstrap."
+        />
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me" class="about-me seccion-oscura">
+      <div class="container">
+        <h2 class="seccion-titulo" data-translate="about-title">
+          Meet Dairan S. De Jesús Mora
+        </h2>
+        <p class="seccion-texto" data-translate="about-text">
+          Full Stack Developer and Computer Science student with strong
+          experience in backend development, cloud integration, and frontend
+          development. Skilled in designing scalable APIs and software
+          architectures using ASP.NET Core, NestJS, and Flask, while building
+          modern, responsive interfaces with Angular and React. Certified AWS
+          Cloud Practitioner, with practical knowledge of SaaS, PaaS, and IaaS
+          models, and hands-on experience deploying applications to the cloud.
+          Passionate about delivering end-to-end solutions that connect
+          databases, backend services, cloud infrastructure, and user
+          interfaces—making systems not only functional and reliable, but also
+          user-centered and impactful.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Web Development -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div class="content d-flex flex-column align-items-center">
+              <i class="bi bi-laptop"></i>
+              <p
+                class="experiencia-titulo"
+                data-translate="experience-webdev-title"
+              >
+                Web Development
+              </p>
+              <p
+                class="experiencia-texto"
+                data-translate="experience-webdev-text"
+              >
+                Experienced in web development, utilizing a wide range of
+                technologies and frameworks. Proficient in creating responsive
+                and dynamic websites using modern web standards and best
+                practices.
+              </p>
+              <div class="badges-contenedor mt-auto">
+                <span class="badge text-bg-primary">HTML</span>
+                <span class="badge text-bg-primary">CSS</span>
+                <span class="badge text-bg-primary">JavaScript</span>
+                <span class="badge text-bg-primary">TypeScript</span>
+                <span class="badge text-bg-primary">Bootstrap</span>
+                <span class="badge text-bg-primary">Tailwind</span>
+                <span class="badge text-bg-primary">React</span>
+                <span class="badge text-bg-primary">NextJS</span>
+                <span class="badge text-bg-primary">Angular</span>
+                <span class="badge text-bg-primary">Angular Material</span>
+                <span class="badge text-bg-primary">VueJS</span>
+                <span class="badge text-bg-primary">Flutter</span>
+                <span class="badge text-bg-primary">Figma</span>
+              </div>
+            </div>
+          </div>
+          <!-- Backend & Cloud -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div class="content d-flex flex-column align-items-center">
+              <i class="bi bi-server"></i>
+              <p
+                class="experiencia-titulo"
+                data-translate="experience-backend-title"
+              >
+                Cloud & Backend
+              </p>
+              <p
+                class="experiencia-texto"
+                data-translate="experience-backend-text"
+              >
+                Hands-on experience with cloud computing (AWS), SaaS, PaaS, and
+                IaaS. Skilled in backend development, database management, and
+                deploying secure, scalable solutions. Familiar with DevOps, Git,
+                and cloud infrastructure configuration.
+              </p>
+              <div class="badges-contenedor mt-auto">
+                <span class="badge text-bg-primary">Python</span>
+                <span class="badge text-bg-primary">Java</span>
+                <span class="badge text-bg-primary">C++</span>
+                <span class="badge text-bg-primary">C#</span>
+                <span class="badge text-bg-primary">Node.js</span>
+                <span class="badge text-bg-primary">NestJS</span>
+                <span class="badge text-bg-primary">Flask</span>
+                <span class="badge text-bg-primary">Prisma</span>
+                <span class="badge text-bg-primary">SQL</span>
+                <span class="badge text-bg-primary">PostgreSQL</span>
+                <span class="badge text-bg-primary">MySQL</span>
+                <span class="badge text-bg-primary">MariaDB</span>
+                <span class="badge text-bg-primary">SQL Server</span>
+                <span class="badge text-bg-primary">Dapper</span>
+                <span class="badge text-bg-primary">Entity Framework</span>
+                <span class="badge text-bg-primary">ASP.NET Core</span>
+                <span class="badge text-bg-primary">AWS</span>
+                <span class="badge text-bg-primary">Azure</span>
+                <span class="badge text-bg-primary">REST APIs</span>
+                <span class="badge text-bg-primary">JWT</span>
+                <span class="badge text-bg-primary">Docker</span>
+                <span class="badge text-bg-primary">DevOps</span>
+                <span class="badge text-bg-primary">Linux</span>
+                <span class="badge text-bg-primary">Git</span>
+                <span class="badge text-bg-primary">GitHub</span>
+                <span class="badge text-bg-primary">GitLab</span>
+                <span class="badge text-bg-primary">SqlAlchemy</span>
+              </div>
+            </div>
+          </div>
+          <!-- Student + Programming Tutor -->
+          <div class="columna col-12 col-md-4 d-flex">
+            <div class="content d-flex flex-column align-items-center">
+              <i class="bi bi-book"></i>
+              <p
+                class="experiencia-titulo"
+                data-translate="experience-student-title"
+              >
+                Student + Programming Tutor
+              </p>
+              <p
+                class="experiencia-texto"
+                data-translate="experience-student-text"
+              >
+                Computer Science student at the Interamerican University of
+                Puerto Rico and former Programming Tutor, recognized for three
+                years of service. Actively expanding my skills through
+                certifications, bootcamps, and hands-on projects in cloud, full
+                stack development, and agile methodologies.
+              </p>
+              <div class="badges-contenedor mt-auto">
+                <span class="badge text-bg-primary"
+                  >Interamerican University</span
+                >
+                <span class="badge text-bg-primary">Programming Tutor</span>
+                <span class="badge text-bg-primary"
+                  >Full Stack Development Bootcamp</span
+                >
+                <span class="badge text-bg-primary"
+                  >AWS Certified Cloud Practitioner</span
+                >
+                <span class="badge text-bg-primary">Scrum</span>
+                <span class="badge text-bg-primary">Forte Global</span>
+                <span class="badge text-bg-primary">OOP</span>
+                <span class="badge text-bg-primary">SDLC</span>
+                <span class="badge text-bg-primary">UX/UI</span>
+                <span class="badge text-bg-primary">Databases</span>
+                <span class="badge text-bg-primary">CLI</span>
+                <span class="badge text-bg-primary">Linux</span>
+                <span class="badge text-bg-primary">Udemy</span>
+                <span class="badge text-bg-primary">Cloud</span>
+                <span class="badge text-bg-primary">Agile</span>
+                <span class="badge text-bg-primary">Problem Solving</span>
+                <span class="badge text-bg-primary">Mentoring</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects py-5 text-center bg-light">
+      <div class="container">
+        <h2
+          class="seccion-titulo mb-4 texto-negro"
+          data-translate="projects-title"
+        >
+          My Recent Projects
+        </h2>
+        <h3
+          class="seccion-descripcion mb-5"
+          data-translate="projects-description"
+        >
+          Here are some of the projects I've created recently...
+        </h3>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/proyecto1.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Static Page</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="proyecto_1/proyecto1.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/lego_serious_play_image.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lego Serious Play</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/proyecto_pato.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="https://dairadoo.github.io/proyecto_pato.github.io/duckHomePage.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/manta_roja_image.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Manta Roja Restaurant</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/restaurant-reservation-front.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="https://dairadoo.github.io/restaurant-reservation-front.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/crud_simple_imagen.png"
+                class="card-img-top"
+                alt="Project 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Local Crud</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/dairandoo.github.io/tree/main/proyecto_4/Crud_Simple"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="proyecto_4/Crud_Simple/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/foodies-app-image.png"
+                class="card-img-top"
+                alt="Project 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Foodies App</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/Next-js-FoodieProject"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="https://proyecto-nextjs-foodies.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="imgs/inspireMe_image.png"
+                class="card-img-top"
+                alt="Project 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">InspireMe!</h5>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://github.com/DairaDoo/react-refresh-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="https://main.d1nkag83kkxelb.amplifyapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark"
+                    ><i class="bi bi-laptop"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/DairaDoo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            type="button"
+            class="btn btn-info"
+            data-translate="view-more-projects"
+          >
+            View more projects
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Certificate Carousel -->
+    <section id="certificates" class="certificates py-5 text-center bg-light">
+      <div class="container">
+        <h2
+          class="seccion-titulo texto-negro mb-4"
+          data-translate="certificates-title"
+        >
+          Certificates and Achievements
+        </h2>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="9"
+              aria-label="Slide 10"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="10"
+              aria-label="Slide 11"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="11"
+              aria-label="Slide 12"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="12"
+              aria-label="Slide 13"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="imgs/certificados/forte_certificado.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Full Stack Developer Junior"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="imgs/certificados/fundamentos_software_cert.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Fundamentos Profesionales del Software"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/JavaCurso_Certificado.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="The Complete Java CertificationCourse"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/python_flask_cert.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="REST APIs with Flask and Python in 2024"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/Scrum_Certificado.png"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="SCRUM Foundation"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/aws_cloud_essentials.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="AWS Cloud Practitioner Essentials"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/cloud_practitioner_certificate.png"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="AWS Cloud Certified Cloud Practitioner"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/certificate_of_participation_in_copilot_hackaton.jpeg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Certificate of Participation on Copilot Hackathon by Popular and Microsoft"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/reconocimiento_tutor_programacion_inter_arecibo.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Certificate of Recognition for beign Programming Tutor at the Interamerican University of Puerto Rico, Arecibo Campus for three years"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/certificado_ihack2025_thirdplace.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Certificate of Participation in I-Hack-2025 (Third Place) by the Interamerican University of Puerto Rico, Bayamon Campus"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/angular_aspnetcore_certificado_ingles.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Angular 19 and ASP.NET Core Course Certificate"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/certificado_jenkins.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="LFS167: Introduction to Jenkins (The Linux Foundation)"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/certificados/fundamentals_of_analytics_on_aws_part1.jpg"
+                class="d-block w-100 img-fluid certificado-img"
+                alt="Fundamentals of Analytics on AWS - Part 1"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials seccion-clara">
+      <h2 class="seccion-titulo" data-translate="testimonials-title">
+        Testimonials
+      </h2>
+      <h3 class="seccion-descripcion" data-translate="testimonials-description">
+        Here are some testimonials from my colleagues....
+      </h3>
+
+      <!-- Carousel -->
+      <div
+        id="testimonials-carousel"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="imgs/certificados/forte_certificado.jpg" class="d-block w-100 img-fluid certificado-img" alt="Full Stack Developer Junior">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="imgs/certificados/fundamentos_software_cert.jpg" class="d-block w-100 img-fluid certificado-img" alt="Fundamentos Profesionales del Software">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/JavaCurso_Certificado.jpg" class="d-block w-100 img-fluid certificado-img" alt="The Complete Java CertificationCourse">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/python_flask_cert.jpg" class="d-block w-100 img-fluid certificado-img" alt="REST APIs with Flask and Python in 2024">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/Scrum_Certificado.png" class="d-block w-100 img-fluid certificado-img" alt="SCRUM Foundation">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/aws_cloud_essentials.jpg" class="d-block w-100 img-fluid certificado-img" alt="AWS Cloud Practitioner Essentials">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/cloud_practitioner_certificate.png" class="d-block w-100 img-fluid certificado-img" alt="AWS Cloud Certified Cloud Practitioner">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/certificate_of_participation_in_copilot_hackaton.jpeg" class="d-block w-100 img-fluid certificado-img" alt="Certificate of Participation on Copilot Hackathon by Popular and Microsoft">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/reconocimiento_tutor_programacion_inter_arecibo.jpg" class="d-block w-100 img-fluid certificado-img" alt="Certificate of Recognition for beign Programming Tutor at the Interamerican University of Puerto Rico, Arecibo Campus for three years">
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/certificados/certificado_ihack2025_thirdplace.jpg" class="d-block w-100 img-fluid certificado-img" alt="Certificate of Participation in I-Hack-2025 (Third Place) by the Interamerican University of Puerto Rico, Bayamon Campus">
+          <div class="carousel-item active">
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="imgs/testimonials/ian_profile.jpg"
+                alt="Client 1"
+              />
+              <p class="testimonio-texto" data-translate="testimonial1-text">
+                I have collaborated repeatedly with Dairan de Jesús Mora on
+                different projects, and he always shows interest and great
+                effort. He consistently gives his best and strives to meet all
+                the requirements assigned to him when working on a project.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Ian P. Padua</p>
+                <p class="cargo">Programmer</p>
+                <p class="cargo">
+                  Linkedln Profile:
+                  <a
+                    href="https://www.linkedin.com/in/ian-padua-cuevas-1946b3319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ian_padua</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="imgs/certificados/angular_aspnetcore_certificado_ingles.jpg" class="d-block w-100 img-fluid certificado-img" alt="Angular 19 and ASP.NET Core Course Certificate">
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="imgs/testimonials/ramon_profile.jpeg"
+                alt="Client 2"
+              />
+              <p class="testimonio-texto" data-translate="testimonial2-text">
+                Dairan is an exceptional Java and full stack developer, and a
+                great tutor. Ive witnessed their journey from mastering the
+                basics of coding to successfully completing full projects. Their
+                dedication and skill growth are truly impressive.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Ramón Valentin</p>
+                <p class="cargo">Programmer Specialized in Cybersecurity</p>
+                <p class="cargo">
+                  Linkedln Profile:
+                  <a
+                    href="https://www.linkedin.com/in/ramonvalentinrivera/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ramon_valentin</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
-           <div class="carousel-item">
-            <img src="imgs/certificados/certificado_jenkins.jpg" class="d-block w-100 img-fluid certificado-img" alt="LFS167: Introduction to Jenkins (The Linux Foundation)">
+          <div class="carousel-item">
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="imgs/testimonials/lara_profile2.jpg"
+                alt="Client 3"
+              />
+              <p class="testimonio-texto" data-translate="testimonial3-text">
+                Dairan is a responsible, cooperative, and respectful person. He
+                is willing to help his colleagues when necessary and ready to
+                face any challenge that comes his way.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Lara V. Cordero</p>
+                <p class="cargo">Programmer Specialized in UX/UI</p>
+                <p class="cargo">
+                  Linkedln Profile:
+                  <a
+                    href="https://www.linkedin.com/in/lara-cordero-aba447258/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >lara_cordero</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonials-carousel"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonials-carousel"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials seccion-clara">
-    <h2 class="seccion-titulo" data-translate="testimonials-title">Testimonials</h2>
-    <h3 class="seccion-descripcion" data-translate="testimonials-description">Here are some testimonials from my colleagues....</h3>
-
-    <!-- Carousel -->
-    <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imgs/testimonials/ian_profile.jpg" alt="Client 1">
-            <p class="testimonio-texto" data-translate="testimonial1-text">I have collaborated repeatedly with Dairan de Jesús Mora on different projects, and he always shows interest and great effort. He consistently gives his best and strives to meet all the requirements assigned to him when working on a project.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Ian P. Padua</p>
-              <p class="cargo">Programmer</p>
-              <p class="cargo">Linkedln Profile: <a href="https://www.linkedin.com/in/ian-padua-cuevas-1946b3319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">ian_padua</a></p>
+    <!-- Contact -->
+    <section id="contact" class="contact seccion-oscura">
+      <div class="container">
+        <div
+          class="container text-center rectangulo d-flex justify-content-evenly"
+        >
+          <div class="row">
+            <div
+              class="col-12 col-md-4 seccion-titulo contact-title"
+              data-translate="contact-title"
+            >
+              Let's Talk!
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imgs/testimonials/ramon_profile.jpeg" alt="Client 2">
-            <p class="testimonio-texto" data-translate="testimonial2-text">Dairan is an exceptional Java and full stack developer, and a great tutor. Ive witnessed their journey from mastering the basics of coding to successfully completing full projects. Their dedication and skill growth are truly impressive.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Ramón Valentin</p>
-              <p class="cargo">Programmer Specialized in Cybersecurity</p>
-              <p class="cargo">Linkedln Profile: <a href="https://www.linkedin.com/in/ramonvalentinrivera/" target="_blank" rel="noopener noreferrer">ramon_valentin</a></p>
+            <div
+              class="col-12 col-md-4 descripcion"
+              data-translate="contact-description"
+            >
+              Contact me to start your web development project and I will bring
+              your vision to life.
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <img class="testimonio-imagen rounded-circle" src="imgs/testimonials/lara_profile2.jpg" alt="Client 3">
-            <p class="testimonio-texto" data-translate="testimonial3-text">Dairan is a responsible, cooperative, and respectful person. He is willing to help his colleagues when necessary and ready to face any challenge that comes his way.</p>
-            <div class="testimonio-info">
-              <p class="cliente">Lara V. Cordero</p>
-              <p class="cargo">Programmer Specialized in UX/UI</p>
-              <p class="cargo">Linkedln Profile: <a href="https://www.linkedin.com/in/lara-cordero-aba447258/" target="_blank" rel="noopener noreferrer">lara_cordero</a></p>
+            <div class="col-12 col-md-4">
+              <a href="mailto:dairandemora.work@gmail.com">
+                <button type="button" data-translate="contact-button">
+                  Contact
+                  <i class="bi bi-envelope-check"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact seccion-oscura">
-    <div class="container">
-      <div class="container text-center rectangulo d-flex justify-content-evenly">
-        <div class="row">
-          <div class="col-12 col-md-4 seccion-titulo contact-title" data-translate="contact-title">
-            Let's Talk!
-          </div>
-          <div class="col-12 col-md-4 descripcion" data-translate="contact-description">
-            Contact me to start your web development project and I will bring your vision to life.
-          </div>
-          <div class="col-12 col-md-4">
-            <a href="mailto:dairandemora.work@gmail.com">
-              <button type="button" data-translate="contact-button">
-                Contact
-                <i class="bi bi-envelope-check"></i>
-              </button>
-            </a>
-          </div>
-        </div>
+    <!-- Footer -->
+    <footer
+      class="footer seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="footer-icono"
+        src="imgs/portfolio_78401.svg"
+        alt="Portfolio logo"
+      />
+      <p class="footer-texto text-center" data-translate="footer-text">
+        I learn and create every day. Let's join forces and bring your project
+        to life!
+      </p>
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://x.com/DairanDoo33?t=unDgVJJUpnRhCyeAlAodJw&s=08"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a
+          href="https://github.com/DairaDoo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://pr.linkedin.com/in/dairan-s-de-jes%C3%BAs-mora-367710257"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/dairandoo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-instagram"></i> </a
+        >x
+        <a
+          href="mailto:dairandemora.work@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
       </div>
-    </div>
-  </section>
+      <div class="derechos-de-autor" data-translate="footer-copyright">
+        Created by Dairan S. De Jesús (2025) &#169;
+      </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer seccion-oscura d-flex flex-column align-items-center justify-content-center">
-    <img class="footer-icono" src="imgs/portfolio_78401.svg" alt="Portfolio logo">
-    <p class="footer-texto text-center" data-translate="footer-text">I learn and create every day. Let's join forces and bring your project to life!</p>
-    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-      <a href="https://x.com/DairanDoo33?t=unDgVJJUpnRhCyeAlAodJw&s=08" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-twitter"></i>
-      </a>
-      <a href="https://github.com/DairaDoo" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="https://pr.linkedin.com/in/dairan-s-de-jes%C3%BAs-mora-367710257" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/dairandoo/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>x
-      <a href="mailto:dairandemora.work@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-envelope"></i>
-      </a>
-    </div>
-    <div class="derechos-de-autor" data-translate="footer-copyright">Created by Dairan S. De Jesús (2025) &#169;</div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</body>
-
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
